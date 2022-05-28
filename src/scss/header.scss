@@ -1,0 +1,21 @@
+header {
+    background: linear-gradient(180deg, #ffffff00, rgba(117, 19, 93, 0.192));
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header-title{
+    color: rgb(43, 7, 34);
+    margin-left: 10px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.header-btn {
+ margin-left: auto;
+ margin-right: 10px;
+ font-family: "Lucida Console", "Courier New", monospace;
+ border-style: none;
+ background-color: #7fcf6771;
+ border-radius: 3px;
+}

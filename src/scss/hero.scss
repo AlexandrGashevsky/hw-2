@@ -1,0 +1,66 @@
+.hero{
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    url('https://wallpaperaccess.com/full/385757.jpg');
+    height: 1200px;
+    position: relative;
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.hero-header{
+   width: 1000px;
+   text-align: center;
+   margin: auto;
+   color: rgb(254, 236, 255);
+   font-weight: bold;
+   font-size: 100px;
+}
+
+.ball-one{
+        width: 100px; height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: ballOneAimation;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        top: 40px; right: 40px;
+        border: solid 1px black;
+        border-radius: 50%;
+        opacity: 30%;
+}
+
+.ball-two{
+    top:100px; 
+    right: 240px;
+    background-color: green;
+    position: relative;
+    animation-name: ballTwoAimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    border: solid 1px black;
+    border-radius: 50%;
+    opacity: 30%;
+    width: 100px; 
+    height: 100px;
+}
+
+@keyframes ballTwoAimation {
+    0% {background-color:green; top:40px; right: 240px;}
+    25%   {background-color:yellow; top:300px; right:40px; opacity: 10%;}
+    50%  {background-color:blue; top:300px; right: 240px; width: 120px; height: 120px; opacity: 10%;}
+    75%  {background-color:red; top: 40px; right: 40px; width: 100px; height: 100px; opacity: 30%;}
+    100%  {background-color:green; top:40px; right: 240px;}
+  }
+
+
+@keyframes ballOneAimation {
+    0%   {background-color:red; top: 40px; right: 40px; width: 100px; height: 100px;}
+    25%  {background-color:yellow; top:300px; right:40px;}
+    50%  {background-color:blue; top:300px; right: 240px; width: 120px; height: 120px;}
+    75%  {background-color:green; top:100px; right: 240px;}
+    100% {background-color:red; top: 40px; right: 40px;}
+  }
