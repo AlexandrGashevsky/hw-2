@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: '/hw-2/'
+    publicPath: '/homework-2/'
 }
